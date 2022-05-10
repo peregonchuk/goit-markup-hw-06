@@ -379,7 +379,7 @@
                   <use href="./images/SVG/symbol-defs.svg#icon-facebook"></use></svg
               ></a>
             </li>
-            <li class="network-item">
+            <li class="network-item it-list">
               <a href="#" class="network-link">
                 <svg class="network-icon" width="20" height="20">
                   <use href="./images/SVG/symbol-defs.svg#icon-linkedin"></use></svg
@@ -387,10 +387,24 @@
             </li>
           </ul>
       </div>
+      <div class="mailing">
+        <h3 class="mailing-header">Подпишитесь на рассылку</h3>
+        <form class="mailing-form">
+        <input type="email" class="mailing-input" name="user-email" placeholder="E-mail">
+        <button type="submit" class="mailing-button">
+          <span class="button-content">
+            Подписаться
+        <svg class="mail-send" width="24" height="24">
+          <use href="./images/SVG/symbol-defs.svg#icon-send"></use>
+        </svg>
+        </span>
+        </button>
+        </form>
+      </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
-            <div class="modal">
+    <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
                 <button type="button" class="modal-close-btn" data-modal-close><svg class="social-soc-icon" width="11" height="11">
                     <use href="./images/SVG/symbol-defs.svg#icon-close"></use>
                 </svg></button>
@@ -429,12 +443,9 @@
                   <textarea placeholder="Введите текст" class="modal-text" name="user-text" id="user-text"></textarea>
                   </div>
                   <div class="modal-checkbox">
-                    <input type="checkbox" class="input-checkbox" id="input-checkbox" name="policy">
+                    <input type="checkbox" class="input-checkbox visually-hidden" id="input-checkbox" name="policy">
                     <label for="input-checkbox" class="input-checkbox-label"
                     ><span>
-                      <svg class="icon-check" width="16" height="15">
-                        <use href="./images/SVG/symbol-defs.svg#icon-icon-check"></use>
-                      </svg>
                     </span>
                     Соглашаюсь с рассылкой и принимаю&#160;
                     <a class="link-policy" href="">Условия договора</a>
